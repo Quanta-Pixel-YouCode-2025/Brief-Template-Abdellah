@@ -16,7 +16,7 @@
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 <!-- Page Navigation -->
 <nav class="navbar custom-navbar navbar-expand-lg navbar-dark" data-spy="affix" data-offset-top="20">
     <div class="container">
@@ -30,31 +30,34 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="index.html#home">Home</a>
+                    <a class="nav-link" href="index.html#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="index.html#about">About</a>
+                    <a class="nav-link" href="index.html#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="services.html">Service</a>
+                    <a class="nav-link" href="services.html">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="index.html#team">Team</a>
+                    <a class="nav-link" href="index.html#team">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="index.html#testimonial">Testimonial</a>
+                    <a class="nav-link" href="index.html#testimonial">Testimonial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="blog.html">Blog</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="_blank" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-primary btn-sm ml-lg-3" href="components.html">Components</a>
+                    <a class="nav-link" href="inscription.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="connexion.html">Login</a>
                 </li>
             </ul>
         </div>
@@ -62,7 +65,20 @@
 </nav>
 <!-- End Of Page Navigation -->
 
+<!-- Page Header -->
+<header class="header">
+    <div class="overlay">
+        <h1 class="title">Contact</h1>
+        <div class="buttons text-center">
+            <a href="services.html" class="btn btn-primary rounded w-lg btn-lg my-1">Our Service</a>
+            <a href="#contact" class="btn btn-outline-light rounded w-lg btn-lg my-1">Contact Us</a>
+        </div>
+    </div>
+</header>
+<!-- End Of Page Header -->
+
 <!-- Contact Section -->
+<section id="contact" class="section">
     <div class="container">
         <div class="contact-card">
             <div class="infos">
@@ -103,7 +119,16 @@
                 <h6 class="section-title mb-4">Get In Touch</h6>
                 <form>
                     <div class="form-group">
-                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <input type="text" class="form-control form-control-lg" id="exampleInputLastname" aria-describedby="lastnameHelp" placeholder="Enter votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" id="exampleInputfirsName" aria-describedby="firstnameHelp" placeholder="Enter votre prénom" required>
+                    </div>
+                    <div class="form-group">
+                    <div class="form-group">
+                            <input type="tel" class="form-control form-control-lg" id="exampleInputTel" aria-describedby="telHelp" placeholder="Enter votre numéro de téléphone" placeholder="88 88 88 88 88" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="10"  title="Ten digits code" required>
+                        </div>
+                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter votre email" required>
                     </div>
                     <div class="form-group">
                         <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" required>
@@ -182,8 +207,5 @@
         </div>
     </div>
 </section>
-
-</body>
-</html>
 </body>
 </html>
